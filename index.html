@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Koło fortuny</title>
+    <style>
+        #zdjecie{
+            min-height: 800px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type= "text/css" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="baner.png" alt="baner">
+        </div>
+        <div id="haslo"></div>
+        <div id="kategoria"></div>
+        <div id="kolo">
+            <img src="arrow.png" alt="Srzałka" id="strzalka">
+            <img src="kolo.png" alt="Koło" id="kolorys">
+        <div id="buttons">
+            <div class="button" id="spin"  onclick="userSpin()">Zakręć</div>
+            <div class="button" id="reset" onclick="location.reload()">Reset</div>
+            <div style="clear:both"></div>
+        </div>
+        </div>
+        <div id="panel">
+            <div class="score" id="gracz"></div>
+            <div class="score" id="wynik"></div>
+            <div id="litery"></div>
+
+        </div>
+        <div style="clear:both"></div>
+        <div id="terminal">Rozpoczyna Gracz1. Zakręć kołem!</div>
+
+    </div>
+    <div id="footer">Koło fortuny the Game ©</div>
+</body>
+
+
+</html>
