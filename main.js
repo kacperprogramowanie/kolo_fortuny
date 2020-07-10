@@ -209,7 +209,13 @@ block();
 }
 odkryte= odkryte+ile;
 if(odkryte===haslo.length-puste){
-    document.getElementById("terminal").innerHTML="Koniec gry! Kliknij reset aby wylosować nowe hasło";
+    if(wynik[0]>wynik[1]){
+        document.getElementById("terminal").innerHTML="Koniec gry! Wygrał Gracz 1 z kwotą "+wynik[0]+ "zł. Kliknij reset aby wylosować nowe hasło.";
+    } 
+    else{
+        document.getElementById("terminal").innerHTML="Koniec gry! Wygrał Gracz 2 z kwotą "+wynik[1]+ "zł. Kliknij reset aby wylosować nowe hasło.";
+    }
+    
     document.getElementById("spin").style.pointerEvents="none";
     document.getElementById("panel").style.pointerEvents="none";
 }
